@@ -5,7 +5,7 @@
     "manifest_version": 2,
     "content_scripts": [{
         "matches": ["*://*/*/*/pull/*", "*://*/*/*/commit/*", "*://*/*/*/compare/*"],
-        "include_globs": ["https://github.com/*", "https://github.*.com/*", "*://git.*/*", "*://ghe.*/*"],
+        "include_globs": ["https://github.com/*", "https://github.*.com/*", "http://github.*.com/*", "*://git.*/*", "*://ghe.*/*"],
         "run_at": "document_end",
         "js": ["github-expand-diff.user.js"]
     }]
